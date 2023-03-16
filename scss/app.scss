@@ -1,0 +1,56 @@
+/* Generate sizing for printing */
+.a4-container {
+    width: 210mm;
+    height: 297mm;
+    padding: 40px 10px 20px 10px;
+    margin: 20px auto;
+    font-family: 'Tajawal', tahoma, sans-serif;
+    background-color: #f1f1f1;
+    .invoice-header {
+        padding-bottom: 25px;
+        border-bottom: 1px solid #ccc;
+
+        h2.invoice-header__title {
+            font-weight: bold;
+        }
+
+        h3.invoice-header__title {
+            font-size: 1.3em;
+        }
+
+        img.invoice-header__barcode {
+            width: 100px;
+            height: 100px;
+        }
+
+        div.invoice-header__information-card {
+            border-right: 1px solid #ccc;
+            padding: 0px 20px;
+        }
+    }
+}
+/* Global helpers used by all files */
+.border-dashed {
+    border-style: dashed !important;
+}
+.border-dotted{
+    border-style: dotted !important;
+}
+.mb-6{
+    margin-bottom: 6rem !important;
+}
+/* Rules for print **/
+@media print {
+    .a4-container {
+        margin: 0;
+    }
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+    }
+    @page{
+        size: A4;
+        margin: 0mm;
+    }
+}
