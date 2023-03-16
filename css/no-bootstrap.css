@@ -1,0 +1,103 @@
+.a4-container {
+  width: 210mm;
+  height: 297mm;
+  padding: 40px 20px 20px 20px;
+  margin: 20px auto;
+  font-family: "Tajawal", tahoma, sans-serif;
+  background-color: #f1f1f1;
+}
+.a4-container .invoice-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  gap: 25%;
+  margin-bottom: 75px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+}
+.a4-container .invoice-header .qr-code-container {
+  flex: 1;
+}
+.a4-container .invoice-header .qr-code-container img {
+  width: 100px;
+  height: 100px;
+}
+.a4-container .invoice-header .content-container {
+  text-align: center;
+  flex: 4;
+}
+.a4-container .invoice-header .content-container h2 {
+  font-size: 1.5em;
+  margin: 0 0 25px 0;
+}
+.a4-container .invoice-header .content-container .sub-content-container {
+  display: flex;
+  justify-content: space-around;
+}
+.a4-container .invoice-header .content-container .sub-content-container p {
+  margin: 0 10px 0 0;
+}
+.a4-container .invoice-section {
+  text-align: right;
+  margin-bottom: 75px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ccc;
+}
+.a4-container .invoice-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+.a4-container .invoice-section .invoice-section-flex-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.a4-container .invoice-section .invoice-section-flex-container .invoice-section-single-card {
+  border-right: 1px solid #ccc;
+  padding: 0px 20px;
+  flex: auto;
+}
+.a4-container .invoice-table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  margin-bottom: 75px;
+  padding-bottom: 25px;
+  border-bottom: 1px dashed #ccc;
+}
+.a4-container .invoice-table thead {
+  border-bottom: 1px dashed #ccc;
+}
+.a4-container .invoice-table thead th {
+  padding: 10px 0;
+}
+.a4-container .invoice-table tbody td {
+  padding: 15px 5px;
+}
+.a4-container .invoice-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  font-size: 1.1em;
+  direction: rtl;
+}
+
+.border-left-dotted {
+  border-left: 1px dotted #ccc;
+}
+
+/* Rules for print **/
+@media print {
+  .a4-container {
+    margin: 0;
+  }
+  html,
+  body {
+    width: 210mm;
+    height: 297mm;
+  }
+  @page {
+    size: A4;
+    margin: 0mm;
+  }
+}/*# sourceMappingURL=no-bootstrap.css.map */

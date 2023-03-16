@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Without Bootstrap</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/no-bootstrap.css">
+</head>
+
+<body>
+    <div class="a4-container">
+        <div class="invoice-header">
+            <div class="qr-code-container">
+                <img class="invoice-header__barcode" src="./images/qr-code.png" alt="invoice barcode">
+            </div>
+            <div class="content-container">
+                <h2>فاتورة ضريبية</h2>
+                <div class="sub-content-container" dir="rtl">
+                    <p>
+                        الرقم التسلسلي
+                        <br>
+                        <small>
+                            SME0030
+                        </small>
+                    </p>
+                    <p>
+                        التاريخ
+                        <br>
+                        <small dir="ltr">
+                            2022 / 05 / 31 - 14:46:32
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="invoice-section">
+            <h3>معلومات البائع</h3>
+            <div class="invoice-section-flex-container" dir="rtl">
+                <div class="invoice-section-single-card">
+                    اسم البائع
+                    <br>
+                    <small>
+                        -------
+                    </small>
+                </div>
+                <div class="invoice-section-single-card flex-fill">
+                    عنوان البائع
+                    <br>
+                    <small>
+                        ---------------
+                    </small>
+                </div>
+                <div class="invoice-section-single-card">
+                    رقم تسجيل ضريبة القيمة المضافة للبائع
+                    <br>
+                    <small>
+                        12345678900000003
+                    </small>
+                </div>
+                <div class="invoice-section-single-card">
+                    رقم السجل التجاري
+                    <br>
+                    <small>
+                        ------
+                    </small>
+                </div>
+            </div>
+        </div>
+        <div class="invoice-section">
+            <h3>معلومات المشتري</h3>
+            <div class="invoice-section-flex-container" dir="rtl">
+                <div class="invoice-section-single-card">
+                    اسم البائع
+                    <br>
+                    <small>
+                        -------
+                    </small>
+                </div>
+                <div class="invoice-section-single-card">
+                    عنوان البائع
+                    <br>
+                    <small>
+                        ---------------
+                    </small>
+                </div>
+                <div class="invoice-section-single-card">
+                    رقم السجل التجاري
+                    <br>
+                    <small>
+                        ------
+                    </small>
+                </div>
+                <div class="invoice-section-single-card">
+                    رقم تسجيل ضريبة القيمة المضافة للمشتري
+                    <br>
+                    <small>
+                        123456789000000033
+                    </small>
+                </div>
+            </div>
+        </div>
+        <table class="invoice-table" dir="rtl">
+            <thead>
+                <th width="10%" class="border-left-dotted">المنتج</th>
+                <th width="10%" class="border-left-dotted">سعر الوحدة</th>
+                <th width="10%">الكمية</th>
+                <th width="20%">المجموع الفرعي بدون الضريبة</th>
+                <th width="10%" class="border-left-dotted">نسبة الضريبة</th>
+                <th width="10%" class="border-left-dotted">قيمة الضريبة</th>
+                <th widh="30%">المجموع شامل ضريبة القيمة المضافة</th>
+            </thead>
+            <tbody class="text-center">
+                <tr>
+                    <td class="border-left-dotted">منتج 1</td>
+                    <td class="border-left-dotted">60</td>
+                    <td>3</td>
+                    <td>180</td>
+                    <td class="border-left-dotted">15%</td>
+                    <td class="border-left-dotted">27</td>
+                    <td>207</td>
+                </tr>
+                <tr>
+                    <td class="border-left-dotted">منتج 2</td>
+                    <td class="border-left-dotted">40</td>
+                    <td>2</td>
+                    <td>80</td>
+                    <td class="border-left-dotted">15%</td>
+                    <td class="border-left-dotted">12</td>
+                    <td>92</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="invoice-total">
+            المجموع
+            <span>260</span>
+        </p>
+        <p class="invoice-total">
+            ضريبة القيمة المضافة (15%)
+            <span>39</span>
+        </p>
+        <p class="invoice-total">
+            المجموع مع الضريبة (15%)
+            <span>299</span>
+        </p>
+    </div>
+</body>
+
+</html>
